@@ -1,4 +1,20 @@
 .Attraction_content{
     background: #CDD0D0;
-    height: 10%;
+    height: 700px;
+    margin: 0;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: 3s;
+    color: white;
+}
+
+.Attraction_content > .text_box{
+    text-align: left;
+    font-size: calc(4px + 2vmin);
+    padding-top: 20%;
+    padding-left: 10%;
+    width: 30%;
+}
+.Attraction_content > .text_box > .title{
+    font-size: calc(4px + 10vmin);
 }
