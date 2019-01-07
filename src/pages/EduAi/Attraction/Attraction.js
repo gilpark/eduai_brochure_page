@@ -14,7 +14,7 @@ class Attraction extends Component {
       this.state = {
         bg_src : bg_0
       }
-      let interval = 4000
+      let interval = 8000
       let len = 4
       let imageArray = [bg_0,bg_1,bg_2,bg_3]
       this.bg$ = xs.periodic(interval).map(x => imageArray[x%len])
@@ -26,13 +26,11 @@ class Attraction extends Component {
             }
         })
   }
-
     render(){
     return(
       <div className={'Attraction_content'}
            style={ { backgroundImage: `url(${this.state.bg_src})` } }
       >
-        {/*<h2> Attraction section</h2>*/}
         <div className={'text_box'}>
             <div className={'title'}>
                 {'EduAi'}
